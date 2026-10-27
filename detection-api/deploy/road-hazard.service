@@ -1,0 +1,17 @@
+[Unit]
+Description=Road hazard detection API
+After=network.target
+
+[Service]
+Type=simple
+User=jetson
+WorkingDirectory=/opt/detection-api
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3 -m road_hazard serve --config configs/jetson.json --host 0.0.0.0 --output /var/lib/road-hazard --cors-origin http://localhost:5173
+StateDirectory=road-hazard
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+
+[Install]
+WantedBy=multi-user.target

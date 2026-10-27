@@ -1,0 +1,14 @@
+{
+  "backend": "tensorrt",
+  "device": "0",
+  "image_size": 320,
+  "confidence": 0.25,
+  "iou": 0.45,
+  "max_detections": 100,
+  "max_pixels": 2073600,
+  "models": [
+    {"name": "pothole", "path": "../models/pothole.engine", "labels": ["pothole"], "enabled": true},
+    {"name": "waterlogging", "path": "../models/waterlogging.engine", "labels": ["water_logging"], "enabled": false},
+    {"name": "obstacle", "path": "../models/obstacle.engine", "labels": ["cone", "barrel", "barrier"], "enabled": false}
+  ]
+}

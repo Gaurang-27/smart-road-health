@@ -1,0 +1,2 @@
+-r requirements-desktop.txt
+onnx==1.16.2

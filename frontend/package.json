@@ -1,0 +1,10 @@
+{
+  "name": "road-hazard-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {"node": ">=20.19"},
+  "scripts": {"dev": "vite --host 0.0.0.0", "build": "vite build", "preview": "vite preview --host 0.0.0.0", "test": "node --test tests/*.test.js"},
+  "dependencies": {"react": "^18.3.1", "react-dom": "^18.3.1"},
+  "devDependencies": {"@vitejs/plugin-react": "^4.3.1", "vite": "^6.4.1"}
+}

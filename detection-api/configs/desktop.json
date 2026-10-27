@@ -1,0 +1,14 @@
+{
+  "backend": "pytorch",
+  "device": "cpu",
+  "image_size": 320,
+  "confidence": 0.25,
+  "iou": 0.45,
+  "max_detections": 100,
+  "max_pixels": 24000000,
+  "models": [
+    {"name": "pothole", "path": "../models/pothole.pt", "labels": ["pothole"]},
+    {"name": "waterlogging", "path": "../models/waterlogging.pt", "labels": ["water_logging"]},
+    {"name": "obstacle", "path": "../models/obstacle.pt", "labels": ["cone", "barrel", "barrier"]}
+  ]
+}
